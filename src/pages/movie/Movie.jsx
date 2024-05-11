@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import SearchMovie from '../../components/Search/SearchMovie';
 import { getFilm } from '../../api';
 import MovieDetails from '../../components/MovieDetails/MovieDetails';
-import { Loader } from '../../components/Loader/Loader';
+import { Loader } from '../../components/Loaders/Loader';
 import { useLocation, useSearchParams } from 'react-router-dom';
 
 export default function Movie() {
