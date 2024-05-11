@@ -19,7 +19,7 @@ const TrendingMovies = ({ items }) => {
 };
 export default TrendingMovies;
 
-// function createMarkup(array) {
+/// function createMarkup(array) {
 //   return (
 //     <ul>
 //       {array.map(item => {
