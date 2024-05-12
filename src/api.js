@@ -4,7 +4,7 @@ const baseUrl = 'https://api.themoviedb.org/3';
 const url = 'https://api.themoviedb.org/3/search/movie';
 const urlTrend = 'https://api.themoviedb.org/3/trending/movie/week';
 
-const API_KEY = '3e29d1368b4df9e4dcbc5ad16f462ff1';
+const API_KEY = '3dbb532a96a0ccf3716bb91e4a79e508';
 
 const options = {
   params: {
@@ -44,7 +44,7 @@ export const getTrendMovies = async query => {
 
 export const getMoviesId = async movieId => {
   try {
-    const response = await axios.get(`${baseUrl}/movie/${movieId}`, {
+    const response = await axios.get(`${baseUrl}/MoviesPage/${movieId}`, {
       params: {
         ...options.params,
       },
@@ -62,7 +62,7 @@ getMoviesId(496450).then(item => {
 
 export const getMoviesCast = async movieId => {
   try {
-    const response = await axios.get(`${baseUrl}/movie/${movieId}/credits`, {
+    const response = await axios.get(`${baseUrl}/MoviesPage/${movieId}/credits`, {
       params: {
         ...options.params,
       },
@@ -77,7 +77,7 @@ export const getMoviesCast = async movieId => {
 
 export const getMoviesReviews = async movieId => {
   try {
-    const response = await axios.get(`${baseUrl}/movie/${movieId}/reviews`, {
+    const response = await axios.get(`${baseUrl}/MoviesPage/${movieId}/reviews`, {
       params: {
         ...options.params,
       },
