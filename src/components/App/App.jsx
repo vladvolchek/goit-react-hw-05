@@ -21,8 +21,8 @@ function App() {
       <Suspense fallback={<b>Loading page</b>}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/movie" element={<Movie />} />
-          <Route path="/movie/:movieId" element={<MovieDetailsPage />}>
+          <Route path="/MoviesPage" element={<Movie />} />
+          <Route path="/MoviesPage/:movieId" element={<MovieDetailsPage />}>
             <Route path="cast" element={<Cast />} />
             <Route path="reviews" element={<Reviews />} />
           </Route>

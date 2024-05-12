@@ -38,7 +38,7 @@ export default function MovieDetailsPage() {
   return (
     <>
       {error && <p>Oops!</p>}
-      <BackLink href={backLinkRef.current ?? '/movie'}>Back to all Movies</BackLink>
+      <BackLink href={backLinkRef.current ?? '/MoviesPage'}>Back to all Movies</BackLink>
 
       {movie && (
         <div>
