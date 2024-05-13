@@ -9,9 +9,9 @@ import NavBar from '../Navigation/NavBar';
 ///// import Reviews from '../Reviews';
 function App() {
   const Home = lazy(() => import('../../pages/HomePage/Home'));
-  const Movie = lazy(() => import('../../pages/MoviesPage/Movie'));
+  const Movie = lazy(() => import('../../pages/MoviesDetailsPage/Movie'));
   const NotFoundPage = lazy(() => import('../NotFoundPage/NotFoundPage'));
-  const MovieDetailsPage = lazy(() => import('../../pages/MovieDetailsPage/MovieDetailsPage'));
+  const MovieDetailsPage = lazy(() => import('../../pages/MoviesPage/MovieDetailsPage'));
   const Cast = lazy(() => import('../MovieCast/Cast'));
   const Reviews = lazy(() => import('../MovieReviews/Reviews'));
 
