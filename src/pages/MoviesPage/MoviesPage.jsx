@@ -24,7 +24,7 @@ export default function Movie() {
   const searchFilms = async query => {
     try {
       setLoading(true);
-      const response = await getFilm(query);
+      const response = await getFilms(query);
       setFilms(response.results);
     } catch (error) {
       setError(true);

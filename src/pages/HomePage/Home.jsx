@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getTrendMovies } from '../../api';
-import TrendingMovies from '../../components/Trending Movies/TrendingMovies';
+import TrendingMovies from '../../components/MovieList/MovieList';
 import { Loader } from '../../components/Loaders/Loader';
 import { useLocation } from 'react-router-dom';
 
