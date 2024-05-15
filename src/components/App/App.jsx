@@ -12,7 +12,7 @@ import NavBar from '../Navigation/Navigation';
   const Movie = lazy(() => import('../../pages/MoviesPage/MoviesPage'));
   const NotFoundPage = lazy(() => import('../NotFoundPage/NotFoundPage'));
   const MovieDetailsPage = lazy(() => import('../../pages/MovieDetailsPage/MovieDetailsPage'));
-  const Cast = lazy(() => import('../MovieCast/MovieCast'));
+  const MovieCast = lazy(() => import('../MovieCast/MovieCast'));
 const Reviews = lazy(() => import('../MovieReviews/MovieReviews'));
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/movies" element={<Movie />} />
           <Route path="/movies/:movieId" element={<MovieDetailsPage />}>
-            <Route path="cast" element={<Cast />} />
+            <Route path="cast" element={<MovieCast />} />
             <Route path="reviews" element={<Reviews />} />
           </Route>
           <Route path="*" element={<NotFoundPage />} />
