@@ -12,8 +12,8 @@ import NavBar from '../Navigation/Navigation';
   const Movie = lazy(() => import('../../pages/MoviesPage/MoviesPage'));
   const NotFoundPage = lazy(() => import('../NotFoundPage/NotFoundPage'));
   const MovieDetailsPage = lazy(() => import('../../pages/MovieDetailsPage/MovieDetailsPage'));
-  const Cast = lazy(() => import('../MovieCast/Cast'));
-  const Reviews = lazy(() => import('../MovieReviews/MovieList'));
+  const Cast = lazy(() => import('../MovieCast/MovieCast'));
+const Reviews = lazy(() => import('../MovieReviews/MovieReviews'));
 function App() {
   return (
     <>

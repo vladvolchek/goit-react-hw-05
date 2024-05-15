@@ -12,7 +12,7 @@ const NavBar = () => {
       <NavLink to="/" className={buildLinkClass}>
         Home
       </NavLink>
-      <NavLink to="/MoviesDetailsPage" className={buildLinkClass}>
+      <NavLink to="/movies" className={buildLinkClass}>
         Movie
       </NavLink>
     </nav>

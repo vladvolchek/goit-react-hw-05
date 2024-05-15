@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import SearchMovie from '../../components/Search/SearchMovie';
-import { getFilm } from '../../api';
-import MovieDetails from '../../components/MovieList/MovieDetails';
+import { getFilms } from '../../api';
+import MovieDetails from '../../components/MovieList/MovieList';
 import { Loader } from '../../components/Loaders/Loader';
 import { useLocation, useSearchParams } from 'react-router-dom';
 
