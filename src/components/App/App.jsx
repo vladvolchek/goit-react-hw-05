@@ -11,9 +11,9 @@ function App() {
   const Home = lazy(() => import('../../pages/HomePage/Home'));
   const Movie = lazy(() => import('../../pages/MoviesPage/MoviesPage'));
   const NotFoundPage = lazy(() => import('../NotFoundPage/NotFoundPage'));
-  const MovieDetailsPage = lazy(() => import('../../pages/MovieList/MovieList'));
+  const MovieDetailsPage = lazy(() => import('../../pages/MovieDetailsPage/MovieDetailsPage'));
   const Cast = lazy(() => import('../MovieCast/Cast'));
-  const Reviews = lazy(() => import('../MovieReviews/MovieReviews'));
+  const Reviews = lazy(() => import('../MovieReviews/MovieList'));
 
   return (
     <>
