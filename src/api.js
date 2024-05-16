@@ -44,7 +44,8 @@ export const getTrendMovies = async query => {
 
 export const getMoviesId = async movieId => {
   try {
-    const response = await axios.get(`${baseUrl}/movies/${movieId}`, {
+    const response = await axios.get(
+        `https://api.themoviedb.org/3/movie/${movieId}`, {
       params: {
         ...options.params,
       },
