@@ -12,7 +12,7 @@ const options = {
   },
 };
 
-export const getFilm = async query => {
+export const getFilms = async query => {
   try {
     const response = await axios.get(url, {
       params: {
@@ -44,7 +44,7 @@ export const getTrendMovies = async query => {
 
 export const getMoviesId = async movieId => {
   try {
-    const response = await axios.get(`${baseUrl}/MoviesDetailsPage/${movieId}`, {
+    const response = await axios.get(`${baseUrl}/movies/${movieId}`, {
       params: {
         ...options.params,
       },
@@ -62,7 +62,7 @@ getMoviesId(496450).then(item => {
 
 export const getMoviesCast = async movieId => {
   try {
-    const response = await axios.get(`${baseUrl}/MoviesDetailsPage/${movieId}/credits`, {
+    const response = await axios.get(`${baseUrl}/movies/${movieId}/credits`, {
       params: {
         ...options.params,
       },
@@ -77,7 +77,7 @@ export const getMoviesCast = async movieId => {
 
 export const getMoviesReviews = async movieId => {
   try {
-    const response = await axios.get(`${baseUrl}/MoviesDetailsPage/${movieId}/reviews`, {
+    const response = await axios.get(`${baseUrl}/movies/${movieId}/reviews`, {
       params: {
         ...options.params,
       },

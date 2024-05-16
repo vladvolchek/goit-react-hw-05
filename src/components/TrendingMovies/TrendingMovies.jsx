@@ -9,7 +9,7 @@ const TrendingMovies = ({ items }) => {
     <ul className={css.list}>
       {items.map(item => (
         <li key={item.id}>
-          <Link to={`/MoviesPage/${item.id}`} state={location}>
+          <Link to={`/movies/${item.id}`} state={location}>
             {item.title}
           </Link>
         </li>

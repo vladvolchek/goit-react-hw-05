@@ -5,10 +5,10 @@ const MovieDetails = ({ items }) => {
   console.log('MD', location);
 
   return (
-    <ul>
+   <ul>
       {items.map(item => (
         <li key={item.id}>
-          <Link to={`/MoviesDetailsPage/${item.id}`} state={location}>
+          <Link to={`/movies${item.id}`} state={location}>
             {item.title}
           </Link>
         </li>
