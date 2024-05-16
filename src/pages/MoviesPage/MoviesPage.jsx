@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import SearchMovie from '../../components/Search/SearchMovie';
+import SearchMovie from '../../components/SearchMovie/SearchMovie';
 import { getFilms } from '../../api';
 import MovieDetails from '../../components/MovieList/MovieList';
 import { Loader } from '../../components/Loaders/Loader';

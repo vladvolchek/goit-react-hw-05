@@ -8,7 +8,7 @@ import NavBar from '../Navigation/Navigation';
 // import Cast from '../Cast';
 ///// import Reviews from '../Reviews';
 
-  const Home = lazy(() => import('../../pages/HomePage/Home'));
+  const Home = lazy(() => import('../../pages/HomePage/HomePage'));
   const Movie = lazy(() => import('../../pages/MoviesPage/MoviesPage'));
   const NotFoundPage = lazy(() => import('../NotFoundPage/NotFoundPage'));
   const MovieDetailsPage = lazy(() => import('../../pages/MovieDetailsPage/MovieDetailsPage'));
